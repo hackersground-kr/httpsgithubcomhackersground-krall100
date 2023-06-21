@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/activity_map.xml" value="0.18" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_location.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_message.xml" value="0.18489583333333334" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_1.xml" value="0.1" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_2.xml" value="0.1" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_3.xml" value="0.1" />
@@ -11,6 +13,7 @@
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/su_home.xml" value="0.2" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/su_map.xml" value="0.33" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/menu/nav_menu.xml" value="0.33" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/menu/navigation_menu.xml" value="0.3619791666666667" />
       </map>
     </option>
   </component>

@@ -9,10 +9,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.all100.fragment.FragmentPage1;
-import com.example.all100.fragment.FragmentPage2;
-import com.example.all100.fragment.FragmentPage3;
-import com.example.all100.fragment.FragmentPage4;
+import com.example.all100.fragment.Location;
+import com.example.all100.fragment.People;
+import com.example.all100.fragment.Message;
+import com.example.all100.fragment.Setting;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Home extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.su_home);
+        setContentView(R.layout.activity_home);
 
         mBottomNV = findViewById(R.id.nav_view);
         mBottomNV.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() { //NavigationItemSelecte
@@ -49,13 +49,13 @@ public class Home extends AppCompatActivity {
         Fragment fragment = fragmentManager.findFragmentByTag(tag);
         if (fragment == null) {
             if (id == R.id.navigation_1) {
-                fragment = new FragmentPage1();
+                fragment = new Location();
             } else if (id == R.id.navigation_2){
-                fragment = new FragmentPage2();
+                fragment = new People();
             }else if (id == R.id.navigation_3){
-                fragment = new FragmentPage3();
+                fragment = new Message();
             } else{
-                fragment = new FragmentPage4();
+                fragment = new Setting();
             }
 
 
