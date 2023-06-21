@@ -15,16 +15,23 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyBEPYN4RLpjbTxtKzOiv4veBTYjoQlFwcE" />
+        </activity>
+
+        <activity android:name=".Home"
+            android:exported="true">
+
+            // 이거 옮겨주면 시작 액티비티 변경 가능
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
         </activity>
+
     </application>
 
 </manifest>
