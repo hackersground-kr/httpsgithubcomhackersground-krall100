@@ -17,7 +17,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/back_btn_agree"
             android:layout_width="25dp"
             android:layout_height="25dp"
             app:srcCompat="@drawable/black_back"
@@ -31,7 +31,7 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="30sp"
-            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/back_btn_agree"
             android:layout_centerVertical="true"
             android:text="약관 동의" />
 
@@ -43,12 +43,220 @@
         android:layout_height="0dp"
         android:id="@+id/agreegroup"
         app:layout_constraintVertical_weight="0.9"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nextpage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleagree"
         app:layout_constraintStart_toStartOf="parent">
 
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="0.1"
+            android:id="@+id/allagree"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/detailagree"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/below_border"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp">
+
+
+            <ImageView
+                android:id="@+id/allchk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/radio_btn" />
+
+            <TextView
+                android:id="@+id/txtallagree"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_toRightOf="@+id/allchk"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="전체 동의하기" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="0.9"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/detailagree"
+            app:layout_constraintTop_toBottomOf="@+id/allagree"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/agree1"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:id="@+id/agreechk1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/radio_btn" />
+
+                <TextView
+                    android:id="@+id/txtagree1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/agreechk1"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="(필수) 만 14세 이상" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/agree2"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp">
+                <ImageView
+                    android:id="@+id/agreechk2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/radio_btn" />
+
+                <TextView
+                    android:id="@+id/txtagree2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/agreechk2"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="(필수) 가입신청 및 이용동의" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/agree3"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:id="@+id/agreechk3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/radio_btn" />
+
+                <TextView
+                    android:id="@+id/txtagree3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/agreechk3"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="(필수) 개인 정보 수집 이용 제공 목적 안내" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/agree4"
+                android:orientation="horizontal"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="20dp">
+
+                <ImageView
+                    android:id="@+id/agreechk4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/radio_btn" />
+
+                <TextView
+                    android:id="@+id/txtagree4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="20dp"
+                    android:layout_toRightOf="@+id/agreechk4"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:text="(필수) 알림 수신" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nextpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agreegroup"
+        app:layout_constraintVertical_weight="0.1">
 
+        <TextView
+            android:id="@+id/nextgo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="10sp"
+            android:text="다음"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/titleid"
+        android:background="@drawable/below_border"
+        app:layout_constraintBottom_toTopOf="@+id/agreegroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="0.1">
+
+
+        <ImageView
+            android:id="@+id/back_btn_findid"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/black_back"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/findidtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="30sp"
+            android:layout_toRightOf="@+id/back_btn_findid"
+            android:layout_centerVertical="true"
+            android:text="아이디 찾기" />
+
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/agreegroup"
+        app:layout_constraintVertical_weight="0.9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleid"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp">
+
+        <TextView
+            android:id="@+id/yourid1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="회원님의 아이디는"
+            app:layout_constraintBottom_toTopOf="@+id/yourid2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_weight="0.3"
+            android:gravity="bottom"
+            />
+
+
+        <TextView
+            android:id="@+id/yourid2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="30sp"
+            android:textColor="@color/mainblue"
+            android:layout_centerVertical="true"
+            android:text="사용자의 아이디"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/yourid3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yourid1"
+            app:layout_constraintVertical_weight="0.2"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/yourid3"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:text="입니다."
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/yourid2"
+            app:layout_constraintVertical_weight="0.4"
+            android:gravity="top"/>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
