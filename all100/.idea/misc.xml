@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/activity_map.xml" value="0.18" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_1.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_2.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_3.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_4.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/su_home.xml" value="0.2" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/su_map.xml" value="0.33" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/menu/nav_menu.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
