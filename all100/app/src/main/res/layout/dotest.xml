@@ -23,14 +23,12 @@
             android:layout_height="wrap_content"
             android:text="getSql"
             android:id="@+id/sql_btn"
-            android:onClick="sqlButton"
             />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="getSql"
             android:id="@+id/btn_load"
-            android:onClick="load"
             />
         <EditText
             android:layout_width="300dp"
