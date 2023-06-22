@@ -85,4 +85,3 @@ public class sickAccount {
     public void setOnoff(boolean onoff) {
         this.onoff = onoff;
     }
-}

@@ -5,11 +5,13 @@ import java.util.ArrayList;
 //보호자
 public class guardAccount {
 
+
     private String name;
     private String address;
     private String birth;
     private String phoneNumber;
     private ArrayList<String> sickList;            //보호대상자 UID 배열
+
 
     public guardAccount(String name, String address, String birth, String phoneNumber, ArrayList<String> sickList){
         this.name = name;
@@ -17,6 +19,7 @@ public class guardAccount {
         this.birth = birth;
         this.phoneNumber = phoneNumber;
         this.sickList = sickList;
+
     }
 
     public String getName() {
@@ -59,4 +62,3 @@ public class guardAccount {
         this.sickList = sickList;
     }
 
-}
