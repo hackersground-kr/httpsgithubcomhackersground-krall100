@@ -40,37 +40,38 @@
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
 
 
-1. Azure로 리소스 그룹을 만들어주세요.
-   - 리소스 그룹 이름은 rg-hg(랜덤숫자조합)으로 하며, 리소스 그룹의 위치는 Korea Central로 합니다.
+### 1. Azure 포탈에서 리소스 그룹 생성
+- https://portal.azure.com 에서 리소스 그룹을 생성합니다.
+- 리소스 그룹 이름은 rg-hg(랜덤숫자조합)으로 하며, 리소스 그룹의 위치는 Korea Central로 합니다.
 
 
 ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/84391428/7719ac1d-619f-4f18-bfff-5b5bea877ec2)
 
 
-2. 저희 GitHub에서 fork를 한 다음, codespace를 생성해주세요.
+### 2. Repository fork
+- 현재 Repository를 fork한 다음, codespace를 생성해주세요.
    
 
-3. app service & app service plan 만들기
+### 3. App service & App service plan 생성
 
 
    (1) App Service plan 생성
-     * 리소스 그룹 밖에서 검색해주세요
-     이름 : asplan-hg(생성한 숫자조합)
-     운영체제 : 리눅스
-     지역 : Korea Central
-     가격 플랜 : B1
+     - 이름 : asplan-hg(생성한 숫자조합)
+     - 운영체제 : 리눅스
+     - 지역 : Korea Central
+     - 가격 플랜 : B1
 
 
    (2) App Service 생성
-     이름 : appsvc-hg(생성한 숫자조합)
-     런타임 스택 : .NET7
-     운영체제 : 리눅스
-     지역 : Central Korea
-     가격 플랜 : B1
-     리눅스 플랜 : 기본 default로 해주세요
+     - 이름 : appsvc-hg(생성한 숫자조합)
+     - 런타임 스택 : .NET7
+     - 운영체제 : 리눅스
+     - 지역 : Central Korea
+     - 가격 플랜 : B1
+     - 리눅스 플랜 : 기본 default로 해주세요
 
 
-4. Secrete Key 설정하기
+### 4. Secrete Key 설정하기
 - codespace의 bash 터미널에서 아래 명령어를 입력합니다.
 
     ```
@@ -93,7 +94,7 @@
     ```
 
 
-6. 파라미터 설정
+### 5. 파라미터 설정
 - bash 터미널 아래 명령어를 입력해주세요.
 ```
 AZURE_APPSERVICE_NAME={생성한 앱 서비스 이름}
@@ -101,7 +102,7 @@ AZURE_RG_NAME={생성한 리소스 그룹 이름}
 ```
 
 
-7. GitHub Actions 시크릿 추가하기 (github settings에 secrete key 설정하기)
+### 6. Secretes 생성
 
 - 터미널에서 아래 명령어를 통해 애저에 로그인합니다.
 
@@ -145,26 +146,30 @@ AZURE_RG_NAME={생성한 리소스 그룹 이름}
     }
     ```
 
-- 아래의 그림에 표시된 순서에 따라 Secrets를 생성합니다.
+- fork한 GitHub repository에서 Settings 탭의 Secrets and variables 섹션에서 Secrets를 생성합니다.
 ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/cf6cb91e-6038-4427-b655-49553368eaf6)
 
 
-
-- 앞서 생성한 json 개체를 GitHub 리포지토리 설정 탭의 Secrets 섹션에서 `AZURE_CREDENTIALS` 값으로 입력합니다.
+- Secrets
+(1) `AZURE_CREDENTIALS`  생성
   - Name : AZURE_CREDENTIALS
   - 앞서 생성한 json 개체
 
 
-
-- 앞서 생성한 `AZURE_ENV_NAME` 값 또한 Secrets로 입력합니다.
+(2)`AZURE_ENV_NAME` Secrets 생성
    - Name : AZURE_ENV_NAME
    - hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
 
 
-8. 배포하기
+- Variables
+(1) 'AZURE_WEBAPP_NAME' Variables 생성
+  - Name : AZURE_WEBAPP_NAME
+  - {앱서비스 이름}
+
+
+### 7. 배포
 
 - README.md 파일에 뭐든지 주석을 남겨주세요.
-
 - 아래 명령어를 통해 코드를 푸시하고 GitHub 액션 워크플로우가 작동하는 것을 확인합니다.
 
 
