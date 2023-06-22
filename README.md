@@ -50,7 +50,7 @@
 
 ### 2. Repository fork
 - 현재 Repository를 fork한 다음, codespace를 생성해주세요.
-   
+- Repository에서 Actions 탭에서 GitHub Actions를 Enable하도록 설정해주세요.
 
 ### 3. App service & App service plan 생성
 
