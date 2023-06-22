@@ -46,7 +46,7 @@ public class So_who_signup extends AppCompatActivity {
                     sickgo.setBackgroundColor(Color.WHITE);
                     whochoose = 0;
                     break;
-                case R.id.who2:
+                case R.id.sickgo:
                     sickgo.setBackgroundColor(Color.parseColor("#98BBEB"));
                     guardgo.setBackgroundColor(Color.WHITE);
                     whochoose = 1;
