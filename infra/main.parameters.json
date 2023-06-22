@@ -7,6 +7,9 @@
       },
       "location": {
         "value": "${AZURE_LOCATION}"
+      },
+      "rg_name": {
+        "value": "${AZURE_RG_NAME}"
       }
     }
   }
