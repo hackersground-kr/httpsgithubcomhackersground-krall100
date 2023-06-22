@@ -13,7 +13,7 @@ public class guardAccount {
     private ArrayList<String> sickList;            //보호대상자 UID 배열
 
 
-    public guardAccount(String name, String address, String birth, String phoneNumber, ArrayList<String> sickList){
+    public guardAccount(String name, String address, String birth, String phoneNumber, ArrayList<String> sickList) {
         this.name = name;
         this.address = address;
         this.birth = birth;
@@ -61,4 +61,4 @@ public class guardAccount {
     public void setSickList(ArrayList<String> sickList) {
         this.sickList = sickList;
     }
-
+}
