@@ -18,6 +18,24 @@
         android:layout_marginTop="30dp"
 
         />
+    <TextView
+        android:id="@+id/kimiinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="KIMI 설명"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/border_blue"
+        android:paddingLeft="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/choosewho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ori_kimi"
+        app:layout_constraintStart_toStartOf="parent"/>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -28,6 +46,8 @@
         app:layout_constraintTop_toBottomOf="@+id/ori_kimi"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/choosewho">
+
+
 
 
             <TextView

@@ -5,19 +5,18 @@ import java.util.ArrayList;
 //보호자
 public class guardAccount {
 
-    private String idToken; //파이어베이스 고유 토큰 정보
     private String name;
     private String address;
     private String birth;
     private String phoneNumber;
     private ArrayList<String> sickList;            //보호대상자 UID 배열
 
-    public String getIdToken() {
-        return idToken;
-    }
-
-    public void setIdToken(String idToken) {
-        this.idToken = idToken;
+    public guardAccount(String name, String address, String birth, String phoneNumber, ArrayList<String> sickList){
+        this.name = name;
+        this.address = address;
+        this.birth = birth;
+        this.phoneNumber = phoneNumber;
+        this.sickList = sickList;
     }
 
     public String getName() {
