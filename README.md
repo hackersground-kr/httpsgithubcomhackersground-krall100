@@ -39,7 +39,7 @@
 
 > **여러분의 제품/서비스를 Microsoft 애저 클라우드에 배포하기 위한 절차를 구체적으로 나열해 주세요.**
 
-
+# 웹 서비스 배포
 ### 1. Azure 포탈에서 리소스 그룹 생성
 - https://portal.azure.com 에서 리소스 그룹을 생성합니다.
 - 리소스 그룹 이름은 rg-hg(자신이 원하는 숫자조합)으로 하며, 리소스 그룹의 위치는 Korea Central로 합니다.
@@ -178,3 +178,19 @@ git add .
 git commit -m "Add GitHub Actions workflow"
 git push origin
 ```
+
+# 앱 서비스 배포    
+
+### 1. Repository fork
+- 현재 Repository를 fork합니다.
+
+### 2. 안드로이드 스튜디오 실행
+- 안드로이드 스튜디오 `File 탭 -> New -> Project From Verson Control...` 을 클릭합니다.
+- GitHub에 로그인하여 fork한 repository를 불러옵니다.
+
+### 3. APK 생성
+- 안드로이드 스튜디오 `Build 탭 -> Build Bundle -> APK -> Build APK`를 통해 APK 파일을 생성합니다.
+
+### 4. Visual Studio App Center
+- https://appcenter.ms/apps
+- 해당 링크에 접속하여 생성된 APK 파일을 업로드합니다.
