@@ -77,7 +77,7 @@
                 android:textSize="16sp"
                 android:layout_height="wrap_content"
                 android:letterSpacing="0.15"
-                android:hint="아이디" />
+                android:hint="이름" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView

@@ -17,7 +17,7 @@
 
 
         <ImageView
-            android:id="@+id/back_btn_findid"
+            android:id="@+id/back_btn_thisisid"
             android:layout_width="25dp"
             android:layout_height="25dp"
             app:srcCompat="@drawable/black_back"
@@ -31,7 +31,7 @@
             android:textSize="20sp"
             android:textColor="@color/black"
             android:layout_marginStart="30sp"
-            android:layout_toRightOf="@+id/back_btn_findid"
+            android:layout_toRightOf="@+id/back_btn_thisisid"
             android:layout_centerVertical="true"
             android:text="아이디 찾기" />
 
