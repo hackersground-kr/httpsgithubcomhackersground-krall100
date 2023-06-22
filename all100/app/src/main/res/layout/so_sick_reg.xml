@@ -96,7 +96,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="3~15자 영문, 숫자 조합으로 입력"
+                    android:hint="유효한 이메일을 입력하세요"
                     android:letterSpacing="0.15"
                     android:textSize="14sp" />
             </com.google.android.material.textfield.TextInputLayout>
