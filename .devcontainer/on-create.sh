@@ -28,4 +28,8 @@ eval "$(github-copilot-cli alias -- "$0")"
 az bicep install
 
 ## AZURE DEV CLI ##
+<<<<<<< HEAD
 curl -fsSL https://aka.ms/install-azd.sh | bash
+=======
+curl -fsSL https://aka.ms/install-azd.sh | bash
+>>>>>>> main
