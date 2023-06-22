@@ -51,7 +51,6 @@ dependencies {
     implementation 'com.google.android.libraries.places:places:2.6.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
 // 구글맵
     implementation 'com.google.android.gms:play-services-maps:18.0.2'
@@ -61,7 +60,6 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.3.2'
     implementation 'androidx.navigation:navigation-ui:2.3.2'
 
-// implementation 'com.google.android.material:material:1.2.1' <-- 중복 종속성 제거
 
     implementation 'com.azure:azure-identity-extensions:1.0.0'
 
@@ -70,9 +68,6 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-messaging:23.1.2'
     implementation 'com.google.firebase:firebase-database:20.2.0'
-// implementation 'com.google.android.material:material:1.8.0' <-- 중복 종속성 제거
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
@@ -81,18 +76,6 @@ dependencies {
     implementation 'me.relex:circleindicator:2.1.6'
     implementation 'androidx.recyclerview:recyclerview-selection:1.1.0'
 
-    implementation 'com.google.firebase:firebase-appcheck-playintegrity'
-    implementation platform('com.google.firebase:firebase-bom:31.2.0')
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation platform('com.google.firebase:firebase-bom:30.3.2')
-    implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-auth'
-    implementation 'com.google.firebase:firebase-firestore'
-    implementation 'com.google.firebase:firebase-storage'
-    implementation platform('com.google.firebase:firebase-bom:30.3.1')
-    implementation 'com.google.firebase:firebase-storage:20.1.0'
-    implementation 'com.google.firebase:firebase-core:21.1.1'
-    implementation 'com.google.firebase:firebase-auth:21.3.0'
     // 스낵바 사용
     implementation 'com.google.android.material:material:1.4.0-alpha02'
 
@@ -102,8 +85,10 @@ dependencies {
     //db
     implementation 'mysql:mysql-connector-java:8.0.26'
     implementation 'com.azure:azure-identity-extensions:1.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
 }
 
 configurations.all {
     exclude group: 'com.google.android.gms', module: 'play-services-safetynet'
+    exclude group: 'com.example', module: 'duplicate-module'
 }
