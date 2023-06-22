@@ -78,7 +78,7 @@
 - 이때, use 앞 -는 두 개입니다.
 
     ```
-    azd auth login —use-device-code
+    azd auth login --use-device-code
     ```
 
     터미널에 보여지는 코드를 복사해두고,
