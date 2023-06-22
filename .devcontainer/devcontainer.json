@@ -8,6 +8,8 @@
           "VARIANT": "7.0"
         }
     },
+
+    "forwardPorts": [ 3000, 5000, 5001, 8080, 44380 ],
     
     "features": {
         // Azure CLI
