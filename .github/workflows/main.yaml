@@ -1,52 +1,33 @@
-name: Development
+name: Azure Web App Deployment
 
 on:
   push:
     branches:
       - main
 
+env:
+  AZURE_WEBAPP_NAME: all100
+  AZURE_WEBAPP_PACKAGE_PATH: app/release/app-release.apk 
+  AZURE_WEBAPP_PUBLISH_PROFILE: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+
 jobs:
-  build-test:
-    runs-on: ubuntu-latest
-
+  build-and-deploy:
+    runs-on: windows-latest
     steps:
-    # add a step to checkout the code
-    - uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-    # add a step to install .NET SDK 7
-    - name: Setup .NET SDK
-      uses: actions/setup-dotnet@v1
+    - name: Set up JDK
+      uses: actions/setup-java@v2
       with:
-        dotnet-version: 7.0.100
+        java-version: '17'
 
-    # add a step to restore NuGet packages
-    - name: Restore NuGet Packages
-      run: dotnet restore
-    
-    # add a step to build the solution
-    - name: Build
-      run: dotnet build --configuration Release
-    
-    # add a step to test the solution
-    - name: Test
-      run: dotnet test --no-build --configuration Release --verbosity normal
+    - name: Build with Gradle
+      run: ./gradlew assembleDebug
 
-    # add a step to publish src/WebApi
-    - name: Publish
-      run: dotnet publish src/WebApi --configuration Release --output publish
-    
-    # add a step to login to Azure
-    - name: Azure Login
-      uses: azure/login@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    # Deploy to Azure Web apps
-    - name: Azure WebApp Deploy
+    - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: ${{ vars.AZURE_WEBAPP_NAME }}
-        package: publish
-
-
-#aaa
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
+        publish-profile: ${{ env.AZURE_WEBAPP_PUBLISH_PROFILE }}
