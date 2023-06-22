@@ -14,6 +14,12 @@ public class sickAccount {
     private ArrayList<String> chatList;
     private boolean onoff; //on=true, off=false
 
+    public sickAccount(String name, String address, boolean onoff){
+        this.name=name;
+        this.address=address;
+        this.onoff=onoff;
+    }
+
     public String getIdToken() {
         return idToken;
     }

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 15일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나 머리가 아파"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 20일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="이번 주 주말에 같이 놀러 가고 싶어"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 23일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나 오늘은 수박이 꼭 먹고 싶어 늘 고맙고 사랑해"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 15일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나 지금 길을 잃었어 주변에는 홈플러스가 보여"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 15일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나 머리가 아파"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 15일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나 머리가 아파"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023년 3월 15일"
+                    android:padding="10dp"
+                    android:textSize="10dp"
+                    >
+
+                </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="나 머리가 아파"
+                    android:padding="20dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/rect"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="30dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
