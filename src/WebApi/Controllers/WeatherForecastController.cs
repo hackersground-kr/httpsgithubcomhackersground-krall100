@@ -29,4 +29,25 @@ public class WeatherForecastController : ControllerBase
         })
         .ToArray();
     }
+
+    // add an action method of GetRange that returns a list of WeatherForecast objects and has a parameter of DateRange with the FromQuery attribute
+    // Path: src/WebApi/Controllers/WeatherForecastController.cs
+    [HttpGet("range", Name = "GetWeatherForecastRange")]
+    public IEnumerable<WeatherForecast> GetRange([FromQuery] DateRange range)
+    {
+        return Enumerable.Range(1, range.Length).Select(index => new WeatherForecast
+        {
+            Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
+            TemperatureC = Random.Shared.Next(-20, 55),
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+        })
+        .ToArray();
+    }
+}
+
+// add a class of DateRange that defines the Length property of the integer type
+// Path: src/WebApi/Models/DateRange.cs
+public class DateRange
+{
+    public int Length { get; set; }
 }
