@@ -45,16 +45,13 @@
 - 리소스 그룹 이름은 rg-hg(자신이 원하는 숫자조합)으로 하며, 리소스 그룹의 위치는 Korea Central로 합니다.
 - 앞으로 작성하는 숫자조합은 모두 위와 같은 숫자조합이어야 합니다.
 
-
-
-
-
 ### 2. Repository fork
 - 현재 Repository를 fork한 다음, codespace를 생성해주세요.
 - Repository에서 Actions 탭에서 GitHub Actions를 Enable하도록 설정해주세요.
 
 ### 3. App service & App service plan 생성
-
+- 생성한 리소스 그룹 안에 App service와 App service plan을 생성해주세요.
+  
 #### - `App Service plan` 생성    
   ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/df12aa4d-948a-4bc9-9e6c-0bd3626b622b)
 
