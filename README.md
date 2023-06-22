@@ -92,13 +92,16 @@
     echo $AZURE_ENV_NAME
     ```
 
-6. 
-- git bash에 입력해주기
+
+6. 파라미터 설정
+- bash 터미널 아래 명령어를 입력해주세요.
 ```
 AZURE_APPSERVICE_NAME={생성한 앱 서비스 이름}
 AZURE_RG_NAME={생성한 리소스 그룹 이름}
 ```
-## 7. GitHub Actions 시크릿 추가하기 (github settings에 secrete key 설정하기)
+
+
+7. GitHub Actions 시크릿 추가하기 (github settings에 secrete key 설정하기)
 
 - 터미널에서 아래 명령어를 통해 애저에 로그인합니다.
 
