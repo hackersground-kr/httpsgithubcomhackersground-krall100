@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace 'com.example.all100'
-    compileSdk 32
+    compileSdk 33
 
     packagingOptions {
         exclude 'META-INF/INDEX.LIST'
@@ -16,8 +16,10 @@ android {
 
     defaultConfig {
         applicationId "com.example.all100"
+
         minSdk 31
         targetSdk 32
+
         versionCode 1
         versionName "1.0"
 
@@ -48,7 +50,9 @@ dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
     implementation 'com.google.android.libraries.places:places:2.6.0'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
 
