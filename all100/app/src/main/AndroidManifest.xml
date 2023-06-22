@@ -27,13 +27,6 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
         </activity>
 
         <!--Intent filter to capture System Browser or Authenticator calling back to our app after sign-in-->
@@ -52,13 +45,28 @@
 
         <activity android:name=".Home"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".Map"
             android:exported="true">
 
         </activity>
+        <activity android:name="com.example.all100.login.Login_main"
+            android:exported="true">
 
+        </activity>
+
+        <activity android:name="com.example.all100.login.FInd_id"
+            android:exported="true">
+        </activity>
+        <activity android:name="com.example.all100.login.This_id"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
