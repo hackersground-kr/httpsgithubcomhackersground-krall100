@@ -29,20 +29,6 @@
             android:exported="true">
         </activity>
 
-        <!--Intent filter to capture System Browser or Authenticator calling back to our app after sign-in-->
-        <activity
-            android:name="com.microsoft.identity.client.BrowserTabActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="msauth"
-                    android:host="com.example.all100"
-                    android:path="/DhlrDh0I6hmscID0hOyKSzqu59Q=" />
-            </intent-filter>
-        </activity>
-
         <activity android:name=".Home"
             android:exported="true">
             <intent-filter>
