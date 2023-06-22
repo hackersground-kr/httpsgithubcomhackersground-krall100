@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -25,7 +28,6 @@
         <activity android:name=".Home"
             android:exported="true">
 
-            // 이거 옮겨주면 시작 액티비티 변경 가능
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
