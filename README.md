@@ -148,6 +148,7 @@ AZURE_RG_NAME="{생성한 리소스 그룹 이름}"
       "managementEndpointUrl": "https://management.core.windows.net/"
     }
     ```
+- 만약, 권한 오류가 발생하면 유저스틴님께서 검증단 디스코드에 올리신 json 개체를 AZURE_CREDENTIALS Secrets로 생성해주세요. 
 
 - fork한 GitHub repository에서 Settings 탭의 Secrets and variables 섹션에서 Secrets를 생성합니다.
 ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/cf6cb91e-6038-4427-b655-49553368eaf6)
@@ -171,6 +172,7 @@ AZURE_RG_NAME="{생성한 리소스 그룹 이름}"
 
 - README.md 파일에 뭐든지 주석을 남겨주세요.
 - 아래 명령어를 통해 코드를 푸시하고 GitHub 액션 워크플로우가 작동하는 것을 확인합니다.
+- 만약, 검증하시다가 워크플로우 작동 도중 Resource Error가 생기면 유저스틴님께서 검증단 디스코드에 올리신 json 개체를 AZURE_CREDENTIALS Secrets로 변경해주세요.
 
 
 ```
