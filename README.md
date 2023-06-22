@@ -155,7 +155,7 @@ AZURE_RG_NAME={생성한 리소스 그룹 이름}
      - 내용 : 앞서 생성한 json 개체
 
 
-   (2)`AZURE_ENV_NAME` Secrets 생성    
+   (2) `AZURE_ENV_NAME` Secrets 생성    
      - Name : AZURE_ENV_NAME    
    - 내용 : hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
   
