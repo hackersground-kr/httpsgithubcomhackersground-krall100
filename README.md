@@ -45,7 +45,7 @@
 - 리소스 그룹 이름은 rg-hg(랜덤숫자조합)으로 하며, 리소스 그룹의 위치는 Korea Central로 합니다.
 
 
-![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/84391428/7719ac1d-619f-4f18-bfff-5b5bea877ec2)
+
 
 
 ### 2. Repository fork
@@ -54,21 +54,22 @@
 
 ### 3. App service & App service plan 생성
 
+#### - `App Service plan` 생성    
+  ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/df12aa4d-948a-4bc9-9e6c-0bd3626b622b)
 
-   (1) App Service plan 생성
-     - 이름 : asplan-hg(생성한 숫자조합)
-     - 운영체제 : 리눅스
-     - 지역 : Korea Central
-     - 가격 플랜 : B1
+   - 이름 : asplan-hg(생성한 숫자조합)
+   - 운영체제 : 리눅스    
+   - 지역 : Korea Central    
+   - 가격 플랜 : B1    
 
-
-   (2) App Service 생성
-     - 이름 : appsvc-hg(생성한 숫자조합)
-     - 런타임 스택 : .NET7
-     - 운영체제 : 리눅스
-     - 지역 : Central Korea
-     - 가격 플랜 : B1
-     - 리눅스 플랜 : 기본 default로 해주세요
+#### - `App Service` 생성    
+  ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/84391428/7719ac1d-619f-4f18-bfff-5b5bea877ec2)
+   - 이름 : appsvc-hg(생성한 숫자조합)    
+   - 런타임 스택 : .NET7    
+   - 운영체제 : 리눅스    
+   - 지역 : Central Korea    
+   - 가격 플랜 : B1    
+   - 리눅스 플랜 : 기본 default로 해주세요    
 
 
 ### 4. Secrete Key 설정하기
