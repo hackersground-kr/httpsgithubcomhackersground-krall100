@@ -37,8 +37,6 @@ public class Originwho extends AppCompatActivity {
         who1.setOnClickListener(onClickListener);
         who2.setOnClickListener(onClickListener);
 
-        getAppKeyHash();
-
 
     }
 
@@ -60,22 +58,6 @@ public class Originwho extends AppCompatActivity {
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
     }
 
-    private void getAppKeyHash() {
-        try {
-            PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), PackageManager.GET_SIGNATURES);
-            for (Signature signature : info.signatures) {
-                MessageDigest md;
-                md = MessageDigest.getInstance("SHA");
-                md.update(signature.toByteArray());
-                String something = new String(Base64.encode(md.digest(), 0));
-                Log.e("해시", something);
-            }
-        } catch (PackageManager.NameNotFoundException e) {
-            Log.e("name not found", e.toString());
-        } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        }
-    }
 
     private void myStartActivity(Class c, int i){
         Intent intent = new Intent(this, c);
