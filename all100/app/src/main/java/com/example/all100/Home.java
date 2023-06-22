@@ -23,41 +23,11 @@ public class Home extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-//        mBottomNV = findViewById(R.id.nav_view);
-
-//        //처음화면
-//        getSupportFragmentManager().beginTransaction().add(R.id.FrameLayout, new MapFragment()).commit(); //FrameLayout에 fragment.xml 띄우기
-//
-//        //바텀 네비게이션뷰 안의 아이템 설정
-//        mBottomNV.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-//            @Override
-//            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-//                switch (menuItem.getItemId()) {
-//                    //item을 클릭시 id값을 가져와 FrameLayout에 fragment.xml띄우기
-//                    case R.id.navigation_1:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout, new MapFragment()).commit();
-//                        break;
-//                    case R.id.navigation_2:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout, new People()).commit();
-//                        break;
-//                    case R.id.navigation_3:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout, new Message()).commit();
-//                        break;
-//                    case R.id.navigation_4:
-//                        getSupportFragmentManager().beginTransaction().replace(R.id.FrameLayout, new Setting()).commit();
-//                        break;
-//                }
-//                return true;
-//            }
-//        });
-
         mBottomNV = findViewById(R.id.nav_view);
         mBottomNV.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() { //NavigationItemSelecte
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 BottomNavigate(menuItem.getItemId());
-
-
                 return true;
             }
         });

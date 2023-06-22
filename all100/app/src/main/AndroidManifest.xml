@@ -38,6 +38,7 @@
             android:exported="true">
 
         </activity>
+
         <activity android:name="com.example.all100.login.Login_main"
             android:exported="true">
 

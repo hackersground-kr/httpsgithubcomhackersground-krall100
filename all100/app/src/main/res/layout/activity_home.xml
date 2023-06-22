@@ -18,10 +18,9 @@
 
         <fragment
             android:id="@+id/myfragment"
-            android:name="com.example.all100.Map"
+            android:name="com.example.all100.fragment.Message"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </fragment>
     </FrameLayout>
 
