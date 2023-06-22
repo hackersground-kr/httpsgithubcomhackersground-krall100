@@ -12,6 +12,13 @@
         android:layout_centerVertical="true"
         >
 
+        <TextView
+            android:id="@+id/sql_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="앗싸"
+            >
+        </TextView>
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,7 +26,12 @@
             android:id="@+id/sql_btn"
             android:onClick="sqlButton"
             />
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="getSql"
+            android:id="@+id/btn_load"
+            />
         <EditText
             android:layout_width="300dp"
             android:layout_height="wrap_content"

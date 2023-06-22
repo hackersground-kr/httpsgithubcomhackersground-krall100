@@ -1,15 +1,25 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
     namespace 'com.example.all100'
     compileSdk 33
 
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
+
     defaultConfig {
         applicationId "com.example.all100"
-        minSdk 21
-        targetSdk 33
+
+        minSdk 31
+        targetSdk 32
+
         versionCode 1
         versionName "1.0"
 
@@ -29,14 +39,65 @@ android {
 }
 
 dependencies {
+    modules {
+        module("org.jetbrains.kotlin:kotlin-stdlib-jdk7") {
+            replacedBy("org.jetbrains.kotlin:kotlin-stdlib", "kotlin-stdlib-jdk7 is now part of kotlin-stdlib")
+        }
+        module("org.jetbrains.kotlin:kotlin-stdlib-jdk8") {
+            replacedBy("org.jetbrains.kotlin:kotlin-stdlib", "kotlin-stdlib-jdk8 is now part of kotlin-stdlib")
+        }
+    }
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation files('C:\\Users\\user\\StudioProjects\\httpsgithubcomhackersground-krall100\\all100\\app\\libs\\jtds-1.3.1.jar')
 
+    implementation 'com.google.android.libraries.places:places:2.6.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+
+// 구글맵
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+// 네비게이션 바
+    implementation 'androidx.navigation:navigation-fragment:2.3.2'
+    implementation 'androidx.navigation:navigation-ui:2.3.2'
+
+
+    implementation 'com.azure:azure-identity-extensions:1.0.0'
+
+    implementation 'com.squareup.okhttp3:okhttp:4.9.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.0'
+
+    implementation 'com.google.firebase:firebase-messaging:23.1.2'
+    implementation 'com.google.firebase:firebase-database:20.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'androidx.recyclerview:recyclerview-selection:1.1.0'
+
+    // 스낵바 사용
+    implementation 'com.google.android.material:material:1.4.0-alpha02'
+
+    implementation 'com.microsoft.identity.client:msal:4.5.0'
+    implementation 'com.android.volley:volley:1.2.1'
+
+    //db
+    //implementation 'mysql:mysql-connector-java:8.0.26'
+    //implementation 'com.azure:azure-identity-extensions:1.0.0'
+    //implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    def appCenterSdkVersion = '4.4.5'
+    implementation "com.microsoft.appcenter:appcenter-analytics:${appCenterSdkVersion}"
+    implementation "com.microsoft.appcenter:appcenter-crashes:${appCenterSdkVersion}"
+
+}
+
+configurations.all {
+    exclude group: 'com.google.android.gms', module: 'play-services-safetynet'
+    exclude group: 'com.example', module: 'duplicate-module'
 }

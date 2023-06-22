@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/titleid"
+        android:background="@drawable/below_border"
+        app:layout_constraintBottom_toTopOf="@+id/scrollreg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_weight="0.1">
+
+
+        <ImageView
+            android:id="@+id/back_btn_regguard"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/black_back"
+            android:layout_marginStart="20dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/findidtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="30sp"
+            android:layout_toRightOf="@+id/back_btn_regguard"
+            android:layout_centerVertical="true"
+            android:text="보호자 등록" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollreg"
+        app:layout_constraintBottom_toTopOf="@+id/finishsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleid"
+        app:layout_constraintVertical_weight="0.9">
+
+        <RelativeLayout
+            android:id="@+id/guardgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20sp"
+            android:paddingRight="20sp"
+            >
+
+            <TextView
+                android:id="@+id/txtid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="아이디"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/chkisitexist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10dp"
+                android:padding="5sp"
+                android:text="중복 체크"
+                android:background="@drawable/thin_border_blue"
+                android:layout_toEndOf="@+id/txtid"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/idfield"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtid"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="유효한 이메일을 입력하세요"
+                    android:letterSpacing="0.15"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idfield"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginBottom="5dp"
+                android:text="비밀번호"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pwfield"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpw"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20sp"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                android:paddingRight="20sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="8-16자의 영문, 숫자 조합으로 입력"
+                    android:letterSpacing="0.15"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtpw1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pwfield"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginBottom="5dp"
+                android:text="비밀번호 확인"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/pw1field"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpw1"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20sp"
+                app:counterEnabled="true"
+                app:counterMaxLength="16"
+                android:paddingRight="20sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="위와 같은 비밀번호를 입력해주세요"
+                    android:letterSpacing="0.15"
+                    android:inputType="textPassword"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/mainblue"
+                android:layout_below="@+id/pw1field"
+                android:id="@+id/border1"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="7dp"/>
+
+            <TextView
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/border1"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginBottom="5dp"
+                android:text="이름"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/namefield"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtname"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="한글 15자, 영문 30자까지 가능합니다"
+                    android:letterSpacing="0.15"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/namefield"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="휴대폰 번호"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/numfield"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnum"
+                android:gravity="center_horizontal"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="-를 제외한 휴대전화 번호를 입력해주세요"
+                    android:letterSpacing="0.15"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtbirth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/numfield"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="생년월일"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/birthfield"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtbirth"
+                android:gravity="center_horizontal"
+                app:counterEnabled="true"
+                app:counterMaxLength="8"
+                android:paddingLeft="20sp"
+                android:paddingRight="20sp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="예시 : 19650622"
+                    android:letterSpacing="0.15"
+                    android:textSize="14sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txtaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthfield"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="주소"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/big_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="주소를 입력해주세요."
+                android:inputType="textPersonName"
+                android:layout_below="@+id/txtaddress"/>
+
+            <EditText
+                android:id="@+id/small_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:ems="10"
+                android:hint="상세 주소를 입력해주세요."
+                android:inputType="textPersonName"
+                android:layout_below="@+id/big_address"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/finishsignup"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/mainblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollreg"
+        app:layout_constraintVertical_weight="0.1">
+
+        <TextView
+            android:id="@+id/signupgo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingRight="10sp"
+            android:text="회원가입 완료!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
