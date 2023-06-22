@@ -4,6 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.all100'
+
     compileSdk 32
 
     packagingOptions {
@@ -12,6 +13,7 @@ android {
         exclude 'META-INF/LGPL2.1'
         exclude 'META-INF/io.netty.versions.properties'
     }
+
 
     defaultConfig {
         applicationId "com.example.all100"
@@ -55,8 +57,6 @@ dependencies {
 
     implementation 'com.google.android.material:material:1.2.1'
 
-
-    implementation 'mysql:mysql-connector-java:8.0.26'
     implementation 'com.azure:azure-identity-extensions:1.0.0'
 
     implementation 'com.squareup.okhttp3:okhttp:4.9.0'
