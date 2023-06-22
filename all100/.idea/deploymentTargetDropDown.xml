@@ -8,6 +8,7 @@
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
             <value value="C:\Users\DamDam\.android\avd\tab_7inch_API_30.avd" />
+
           </Key>
         </deviceKey>
       </Target>

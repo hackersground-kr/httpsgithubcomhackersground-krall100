@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:id="@+id/scrollreg"
-        app:layout_constraintBottom_toTopOf="@+id/finishsignup"
+        app:layout_constraintBottom_toTopOf="@+id/finishsignup1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleid"
@@ -321,7 +321,7 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/finishsignup"
+        android:id="@+id/finishsignup1"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/mainblue"
