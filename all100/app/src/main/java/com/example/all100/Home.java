@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import com.example.all100.fragment.Location;
 import com.example.all100.fragment.People;
 import com.example.all100.fragment.Message;
 import com.example.all100.fragment.Setting;
@@ -62,7 +61,7 @@ public class Home extends AppCompatActivity {
                 return true;
             }
         });
-        mBottomNV.setSelectedItemId(R.id.navigation_1);
+        mBottomNV.setSelectedItemId(R.id.navigation_2);
     }
 
     private void BottomNavigate(int id) {  //BottomNavigation 페이지 변경
@@ -77,9 +76,7 @@ public class Home extends AppCompatActivity {
 
         Fragment fragment = fragmentManager.findFragmentByTag(tag);
         if (fragment == null) {
-            if (id == R.id.navigation_1) {
-                fragment = new Location();
-            } else if (id == R.id.navigation_2){
+            if (id == R.id.navigation_2){
                 fragment = new People();
             }else if (id == R.id.navigation_3){
                 fragment = new Message();
@@ -87,7 +84,8 @@ public class Home extends AppCompatActivity {
                 fragment = new Setting();
             }
 
-            fragmentTransaction.add(R.id.FrameLayout, fragment, tag);
+            // replace 말고 add하면 다시 돌아와도 지도 그대로임
+            fragmentTransaction.replace(R.id.FrameLayout, fragment, tag);
         } else {
             fragmentTransaction.show(fragment);
         }
