@@ -62,10 +62,11 @@
 
 #### - `App Service` 생성    
   ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/84391428/7719ac1d-619f-4f18-bfff-5b5bea877ec2)
-   - 이름 : appsvc-hg(생성한 숫자조합)    
-   - 런타임 스택 : .NET7    
+   - 이름 : appsvc-hg(생성한 숫자조합)
+   - 게시 : 코드 
+   - 런타임 스택 : .NET 7    
    - 운영체제 : 리눅스    
-   - 지역 : Central Korea    
+   - 지역 : Korea Central    
    - 가격 플랜 : B1    
    - 리눅스 플랜 : 기본 default로 해주세요    
 
