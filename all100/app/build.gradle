@@ -5,10 +5,16 @@ plugins {
 android {
     namespace 'com.example.all100'
     compileSdk 33
-
+    //실험
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/io.netty.versions.properties'
+    }
     defaultConfig {
         applicationId "com.example.all100"
-        minSdk 21
+        minSdk 26
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -46,4 +52,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.2'
 
     implementation 'com.google.android.material:material:1.2.1'
+
+    //데베
+    implementation 'mysql:mysql-connector-java:8.0.26'
+    implementation 'com.azure:azure-identity-extensions:1.0.0'
+
+    //음성인식
+    implementation 'com.microsoft.cognitiveservices.speech:client-sdk:1.19.0'
 }
