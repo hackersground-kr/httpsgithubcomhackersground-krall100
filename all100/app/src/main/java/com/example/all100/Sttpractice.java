@@ -92,7 +92,7 @@ public class Sttpractice extends AppCompatActivity {
             }
         });
 
-        // Check and request the required permissions
+
         if (checkPermission()) {
             startSpeechToText();
         } else {
