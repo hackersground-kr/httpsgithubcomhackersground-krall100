@@ -75,6 +75,7 @@
 ### 4. Secrete Key 설정하기
 - 먼저, fork한 repository에서 codespace를 생성해주세요.    
 - codespace의 bash 터미널에서 아래 명령어를 입력합니다.
+- 이때, use 앞 -는 두 개입니다.
 
     ```
     azd auth login —use-device-code
