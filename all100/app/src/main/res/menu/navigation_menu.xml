@@ -2,11 +2,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_1"
-        android:icon="@drawable/location"
-        android:title="화면 1" />
-
-    <item
         android:id="@+id/navigation_2"
         android:icon="@drawable/list"
         android:title="화면 2" />

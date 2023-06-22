@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace 'com.example.all100'
-    compileSdk 33
+    compileSdk 32
 
     packagingOptions {
         exclude 'META-INF/INDEX.LIST'
@@ -15,7 +15,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.all100"
-        minSdk 21
+        minSdk 31
         targetSdk 32
         versionCode 1
         versionName "1.0"
@@ -37,9 +37,10 @@ android {
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.6.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.libraries.places:places:2.6.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -53,6 +54,7 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui:2.3.2'
 
     implementation 'com.google.android.material:material:1.2.1'
+
 
     implementation 'mysql:mysql-connector-java:8.0.26'
     implementation 'com.azure:azure-identity-extensions:1.0.0'
@@ -87,6 +89,9 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:20.1.0'
     implementation 'com.google.firebase:firebase-core:21.1.1'
     implementation 'com.google.firebase:firebase-auth:21.3.0'
+    
+    // 스낵바 사용
+    implementation 'com.google.android.material:material:1.4.0-alpha02'
 }
 
 configurations.all {

@@ -3,22 +3,35 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/activity_map.xml" value="0.18" />
-        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_location.xml" value="0.29528985507246375" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1655" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1655" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/drawable/rect.xml" value="0.248" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/activity_home.xml" value="0.2303370786516854" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/activity_map.xml" value="0.33" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_location.xml" value="0.25705329153605017" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_map.xml" value="0.1" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_message.xml" value="0.18489583333333334" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_1.xml" value="0.1" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_2.xml" value="0.1" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_3.xml" value="0.1" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_page_4.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_people.xml" value="0.14402173913043478" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/so_agree_verify.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/so_find_id.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/so_sick_reg.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/so_this_id.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/su_home.xml" value="0.2" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/su_map.xml" value="0.33" />
+        <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/layout/ye_protection_item.xml" value="0.29528985507246375" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/menu/nav_menu.xml" value="0.33" />
         <entry key="..\:/Users/82106/Desktop/httpsgithubcomhackersground-krall100/all100/app/src/main/res/menu/navigation_menu.xml" value="0.3619791666666667" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
