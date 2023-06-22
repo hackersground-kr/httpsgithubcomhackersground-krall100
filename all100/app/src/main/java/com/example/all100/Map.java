@@ -77,30 +77,11 @@ public class Map extends AppCompatActivity implements OnMapReadyCallback, Activi
     Location mCurrentLocation;
     LatLng currentPosition;
 
-    // 거리 구하려고 선언한 거
-    private LatLng previousPosition = null;
-    private Marker addedMarker = null;
-    private int tracking = 0;
-
     private FusedLocationProviderClient mFusedLocationClient;
     private LocationRequest locationRequest;
     private Location location;
 
     private View mLayout;  // Snackbar 사용하기위함.
-
-    private double sum_dist; // 총 이동 거리
-
-    // 시작, 중지 버튼 눌렀을때 형성되는 마커들
-    private MarkerOptions optFirst = new MarkerOptions();
-    private MarkerOptions optSecond = new MarkerOptions();
-
-    // 사진 들어갈 마커
-    private MarkerOptions optImage = new MarkerOptions();
-
-
-    // 경로 변수, 사진촬영 요청 변수 생성
-    String mCurrentPhotoPath;
-    final static int REQUEST_TAKE_PHOTO = 11;
 
 //    // 파이어베이스 유저
 //    private FirebaseUser user;
