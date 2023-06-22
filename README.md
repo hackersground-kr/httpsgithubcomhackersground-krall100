@@ -105,11 +105,56 @@
 AZURE_APPSERVICE_NAME=2번에서 만들었던 앱 서비스 플랜 이름
 AZURE_RG_NAME=자신의 리소스 그룹 이름
 ```
-7. settings에 secrete key 설정하기
+## 7. GitHub Actions 시크릿 추가하기 (github settings에 secrete key 설정하기)
+
+1. 터미널에서 아래 명령어를 통해 애저에 로그인합니다.
+
+    ```bash
+    az login
+    ```
+
+   > 새 웹 브라우저 탭이 나타나면서 404 에러가 보인다면 주소창의 `http://localhost...`로 시작하는 주소를 복사해서 새 터미널 창에 `curl` 명령어와 함께 붙여넣습니다.
+   > 이 때 새 터미널 창을 bash 터미널로 열어서 잘 실행이 안 된다면, zsh 터미널로 열어서 해 보세요.
+   > 위의 두 방법이 작동하지 않는다면 해당 `az login --use-device-code` 명령어를 사용해 로그인해주세요.
+
+1. 아래 명령어를 통해 현재 구독을 확인합니다.
+
+    ```bash
+    az account show
+    ```
+
+1. 아래 명령어를 통해 애저 로그인 키를 생성합니다. 이 때 이름의 `hg{{숫자}}`는 앞서 생성한 `AZURE_ENV_NAME`입니다. (`echo $AZURE_ENV_NAME`로 확인 가능.)
+
+    ```bash
+    subscriptionId=$(az account show --query "id" -o tsv)
+    az ad sp create-for-rbac \
+        --name "spn-hg{{숫자}}" --role contributor \
+        --scopes /subscriptions/$subscriptionId \
+        --sdk-auth
+    ```
+
+   생성된 키는 대략 아래와 같은 모양입니다. 아래 `clientId`, `clientSecret`, `subscriptionId`, `tenantId` 값은 예시일 뿐 실제로 존재하지 않는 값입니다.
+
+    ```json
+    {
+      "clientId": "9814fa03-26b8-4ce0-9021-121d16cc929f",
+      "clientSecret": "uOR^Pt*Tv7iMqtzrQe1Zq5Djlf*K4P8QzALlNfw#",
+      "subscriptionId": "a348f9f2-dc63-4083-b19b-4f235e0b5175",
+      "tenantId": "4e18dd75-d9e5-4afc-ad7e-ac436d98e812",
+      "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+      "resourceManagerEndpointUrl": "https://management.azure.com/",
+      "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+      "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+      "galleryEndpointUrl": "https://gallery.azure.com/",
+      "managementEndpointUrl": "https://management.core.windows.net/"
+    }
+    ```
+
+1. 위에 생성한 JSON 개체를 GitHub 리포지토리 설정 탭의 Secrets 섹션에서 `AZURE_CREDENTIALS` 값으로 입력합니다.
+1. 앞서 생성한 `AZURE_ENV_NAME` 값을 시크릿으로 입력합니다.
    - Name : (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
-     hg(랜덤숫자)
-   - Crendential key : (echo $AZURE_CREDENTIALS을 bash에 치면 확인 가능)
-     {~~}
+   - hg(랜덤숫자)
+
 8. 배포하기
 - 아래 명령어를 통해 코드를 푸시하고 GitHub 액션 워크플로우가 작동하는 것을 확인합니다.
 ```
