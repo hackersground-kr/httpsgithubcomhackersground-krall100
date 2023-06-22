@@ -17,6 +17,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.example.all100.Home;
 import com.example.all100.R;
+import com.example.all100.WebViewDemo;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.security.MessageDigest;
@@ -24,7 +25,7 @@ import java.security.NoSuchAlgorithmException;
 
 
 public class Originwho extends AppCompatActivity {
-    private TextView who1, who2;
+    private TextView who1, who2, kimiinfo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +34,11 @@ public class Originwho extends AppCompatActivity {
 
         who1 = findViewById(R.id.who1);
         who2 = findViewById(R.id.who2);
+        kimiinfo = findViewById(R.id.kimiinfo);
 
         who1.setOnClickListener(onClickListener);
         who2.setOnClickListener(onClickListener);
+        kimiinfo.setOnClickListener(onClickListener);
 
 
     }
@@ -50,7 +53,9 @@ public class Originwho extends AppCompatActivity {
                 case R.id.who2:
                     myStartActivity(Login_main.class, 1);
                     break;
-
+                case R.id.kimiinfo:
+                    myStartActivity(WebViewDemo.class, 2);
+                    break;
             }
         }
     };
