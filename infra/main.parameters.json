@@ -10,6 +10,9 @@
       },
       "rg_name": {
         "value": "${AZURE_RG_NAME}"
+      },
+      "app_name": {
+        "value": "${AZURE_APPSERVICE_NAME}"
       }
     }
   }
