@@ -149,22 +149,19 @@ AZURE_RG_NAME={생성한 리소스 그룹 이름}
 - fork한 GitHub repository에서 Settings 탭의 Secrets and variables 섹션에서 Secrets를 생성합니다.
 ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/cf6cb91e-6038-4427-b655-49553368eaf6)
 
-
-- Secrets
-(1) `AZURE_CREDENTIALS`  생성
-  - Name : AZURE_CREDENTIALS
-  - 앞서 생성한 json 개체
-
-
-(2)`AZURE_ENV_NAME` Secrets 생성
-   - Name : AZURE_ENV_NAME
-   - hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
+  
+   (1) `AZURE_CREDENTIALS`  Secrets 생성
+     - Name : AZURE_CREDENTIALS
+     - 내용 : 앞서 생성한 json 개체
 
 
-- Variables
-(1) 'AZURE_WEBAPP_NAME' Variables 생성
-  - Name : AZURE_WEBAPP_NAME
-  - {앱서비스 이름}
+   (2)`AZURE_ENV_NAME` Secrets 생성    
+     - Name : AZURE_ENV_NAME    
+   - 내용 : hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
+  
+   (3) `AZURE_WEBAPP_NAME` Variables 생성
+     - Name : AZURE_WEBAPP_NAME
+     - 내용 : {앱서비스 이름}
 
 
 ### 7. 배포
