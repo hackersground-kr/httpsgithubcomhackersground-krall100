@@ -14,7 +14,9 @@ import com.example.all100.Home;
 import com.example.all100.R;
 import com.google.android.material.textfield.TextInputLayout;
 
-
+import com.microsoft.appcenter.AppCenter;
+import com.microsoft.appcenter.analytics.Analytics;
+import com.microsoft.appcenter.crashes.Crashes;
 public class Login_main extends AppCompatActivity {
 
     private TextInputLayout idtextfield, pdtextfield;
@@ -36,6 +38,9 @@ public class Login_main extends AppCompatActivity {
         forgetID = findViewById(R.id.forgetID);
         gologin.setOnClickListener(onClickListener);
         forgetID.setOnClickListener(onClickListener);
+
+        AppCenter.start(getApplication(), "0d9285f4-ef83-425a-a3c4-0b86a14a0b88",
+                Analytics.class, Crashes.class);
 
     }
 
@@ -64,7 +69,7 @@ public class Login_main extends AppCompatActivity {
             //여기서 db와 비교 전체 돌아가면서 get해야 함
 
             //만약 success했다면
-            myStartActivity(Home.class);
+            //myStartActivity(Home.class);
 
             //만약 실패했다면
             //startToast("아이디와 비밀번호를 다시 확인해주세요.");
