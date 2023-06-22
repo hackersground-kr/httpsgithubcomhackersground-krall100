@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.all100.Home;
 import com.example.all100.R;
+import com.example.all100.Sttpractice;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -135,7 +136,7 @@ public class Login_main extends AppCompatActivity {
                                                 public void onSuccess(DocumentSnapshot documentSnapshot) {
                                                     if (documentSnapshot.exists()) {
                                                         //null
-                                                        myStartActivity(Home.class);
+                                                        myStartActivity(Sttpractice.class);
                                                     }
                                                 }
                                             })
