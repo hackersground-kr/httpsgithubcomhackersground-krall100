@@ -79,22 +79,22 @@
     터미널에서 enter를 누릅니다.
     열린 브라우저에 복사한 코드를 입력하고 로그인해주세요.
 
-    ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/6db2ba44-40e5-41f9-9b21-f8489d69f1f4)
+    ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/fa56beb5-6665-49d2-890a-aefcd8a294f7)
 
     
 
-- 터미널에 아래 명령어를 차례로 입력합니다.
+- bash 터미널에 아래 명령어를 차례로 입력합니다.
 
-    ```bash
-    AZURE_ENV_NAME="hg$RANDOM"
+    ```
+    AZURE_ENV_NAME="hg{위에서 만든 숫자조합}"
     echo $AZURE_ENV_NAME
     ```
 
 6. 
 - git bash에 입력해주기
 ```
-AZURE_APPSERVICE_NAME=2번에서 만들었던 앱 서비스 플랜 이름
-AZURE_RG_NAME=자신의 리소스 그룹 이름
+AZURE_APPSERVICE_NAME={생성한 앱 서비스 이름}
+AZURE_RG_NAME={생성한 리소스 그룹 이름}
 ```
 ## 7. GitHub Actions 시크릿 추가하기 (github settings에 secrete key 설정하기)
 
@@ -141,14 +141,13 @@ AZURE_RG_NAME=자신의 리소스 그룹 이름
     ```
 
 - 아래의 그림에 표시된 순서에 따라 Secrets를 생성합니다.
-![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/ada648db-4612-4b19-a6d0-8f868b15cc6d)
+![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/cf6cb91e-6038-4427-b655-49553368eaf6)
 
 
 
-- 앞서 생성한 JSON 개체를 GitHub 리포지토리 설정 탭의 Secrets 섹션에서 `AZURE_CREDENTIALS` 값으로 입력합니다.
-  - Name : AZURE_ENV_NAME
-   - hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
-
+- 앞서 생성한 json 개체를 GitHub 리포지토리 설정 탭의 Secrets 섹션에서 `AZURE_CREDENTIALS` 값으로 입력합니다.
+  - Name : AZURE_CREDENTIALS
+  - 앞서 생성한 json 개체
 
 
 
@@ -156,8 +155,11 @@ AZURE_RG_NAME=자신의 리소스 그룹 이름
    - Name : AZURE_ENV_NAME
    - hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
 
+
 8. 배포하기
 - 아래 명령어를 통해 코드를 푸시하고 GitHub 액션 워크플로우가 작동하는 것을 확인합니다.
+
+
 ```
 git add .
 git commit -m "Add GitHub Actions workflow"
