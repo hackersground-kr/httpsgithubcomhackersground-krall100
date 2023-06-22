@@ -1,6 +1,6 @@
-# `{{ 올백 }}` - `{{ 치매환자 보호 서비스 }}`
+# `올백` - `치매환자 보호 서비스`
 
-해커그라운드 해커톤에 참여하는 `{{ 올백 }}` 팀의 `{{ 치매환자 보호 서비스 }}`입니다.
+해커그라운드 해커톤에 참여하는 `올백` 팀의 `치매환자 보호 서비스`입니다.
 
 ## 참고 문서
 
@@ -42,6 +42,8 @@
 
 1. Azure로 리소스 그룹을 만들어주세요.
    - 리소스 그룹 이름은 rg-hg(랜덤숫자조합)으로 하며, 리소스 그룹의 위치는 Korea Central로 합니다.
+
+
 ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/84391428/7719ac1d-619f-4f18-bfff-5b5bea877ec2)
 
 
@@ -51,16 +53,16 @@
 3. app service & app service plan 만들기
 
 
-   (1) App Service plan (리소스 그룹 밖에서 검색시 App Service 요금제) 부터 만들어주세요
+   (1) App Service plan 생성
      * 리소스 그룹 밖에서 검색해주세요
-     이름 : asplan-hg(랜덤숫자)
+     이름 : asplan-hg(생성한 숫자조합)
      운영체제 : 리눅스
      지역 : Korea Central
      가격 플랜 : B1
 
 
-   (2) App Service (검색시 웹 앱)
-     이름 : appsvc-hg(랜덤숫자)
+   (2) App Service 생성
+     이름 : appsvc-hg(생성한 숫자조합)
      런타임 스택 : .NET7
      운영체제 : 리눅스
      지역 : Central Korea
@@ -157,6 +159,9 @@ AZURE_RG_NAME={생성한 리소스 그룹 이름}
 
 
 8. 배포하기
+
+- README.md 파일에 뭐든지 주석을 남겨주세요.
+
 - 아래 명령어를 통해 코드를 푸시하고 GitHub 액션 워크플로우가 작동하는 것을 확인합니다.
 
 
