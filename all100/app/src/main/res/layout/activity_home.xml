@@ -18,7 +18,7 @@
 
         <fragment
             android:id="@+id/myfragment"
-            android:name="com.example.all100.fragment.MapFragment"
+            android:name="com.example.all100.fragment.Location"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
