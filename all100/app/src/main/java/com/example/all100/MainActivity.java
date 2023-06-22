@@ -1,5 +1,6 @@
 package com.example.all100;
 
+
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +16,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String DB_URL = "jdbc:mysql://your-database-url:3306/your-database-name";
@@ -27,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.dotest);
 
         etSql = findViewById(R.id.sql_et);
@@ -125,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String value) {
             tvSql.setText(value);
+
         }
     }
 }
