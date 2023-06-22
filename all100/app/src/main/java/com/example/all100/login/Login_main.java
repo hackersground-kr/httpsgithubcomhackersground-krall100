@@ -64,6 +64,7 @@ public class Login_main extends AppCompatActivity {
                 Analytics.class, Crashes.class);
 
         mAuth = FirebaseAuth.getInstance();
+        login_main_2.setOnClickListener(onClickListener);
     }
 
     View.OnClickListener onClickListener = new View.OnClickListener() {
