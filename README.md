@@ -100,8 +100,8 @@
 ### 5. 파라미터 설정
 - bash 터미널 아래 명령어를 입력해주세요.
 ```
-AZURE_APPSERVICE_NAME={생성한 앱 서비스 이름}
-AZURE_RG_NAME={생성한 리소스 그룹 이름}
+AZURE_APPSERVICE_NAME="{생성한 앱 서비스 이름}"
+AZURE_RG_NAME="{생성한 리소스 그룹 이름}"
 ```
 
 
@@ -160,7 +160,7 @@ AZURE_RG_NAME={생성한 리소스 그룹 이름}
 
    (2) `AZURE_ENV_NAME` Secrets 생성    
      - Name : AZURE_ENV_NAME    
-   - 내용 : hg(랜덤숫자) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
+   - 내용 : hg(숫자조합) (echo $AZURE_ENV_NAME을 bash에 치면 확인 가능)
   
    (3) `AZURE_WEBAPP_NAME` Variables 생성
      - Name : AZURE_WEBAPP_NAME
