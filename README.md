@@ -193,4 +193,4 @@ git push origin
 
 ### 4. Visual Studio App Center
 - https://appcenter.ms/apps
-- 해당 링크에 접속하여 생성된 APK 파일을 업로드합니다.
+- 해당 링크에 접속하여 새로운 앱을 추가하고, 생성된 APK 파일을 배포합니다.
