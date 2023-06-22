@@ -9,10 +9,6 @@ jobs:
   build-test:
     runs-on: ubuntu-latest
 
-    environment:
-      name: 'Production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
-
     steps:
     # add a step to checkout the code
     - uses: actions/checkout@v2
@@ -49,7 +45,6 @@ jobs:
     - name: Azure WebApp Deploy
       uses: azure/webapps-deploy@v2
       with:
-        app-name: ${{ secrets.AZURE_WEBAPP_NAME }}
+        app-name: ${{ vars.AZURE_WEBAPP_NAME }}
         package: publish
-        slot-name: 'Production'
 
