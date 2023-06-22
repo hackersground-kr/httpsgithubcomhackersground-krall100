@@ -79,7 +79,8 @@
     터미널에서 enter를 누릅니다.
     열린 브라우저에 복사한 코드를 입력하고 로그인해주세요.
 
-    ![Alt text](image.png)
+    ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/6db2ba44-40e5-41f9-9b21-f8489d69f1f4)
+
     
 
 - 터미널에 아래 명령어를 차례로 입력합니다.
@@ -140,7 +141,8 @@ AZURE_RG_NAME=자신의 리소스 그룹 이름
     ```
 
 - 아래의 그림에 표시된 순서에 따라 Secrets를 생성합니다.
-![Alt text](image-1.png)
+![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/ada648db-4612-4b19-a6d0-8f868b15cc6d)
+
 
 
 - 앞서 생성한 JSON 개체를 GitHub 리포지토리 설정 탭의 Secrets 섹션에서 `AZURE_CREDENTIALS` 값으로 입력합니다.
