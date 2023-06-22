@@ -55,6 +55,7 @@
 #### - `App Service plan` 생성    
   ![image](https://github.com/hackersground-kr/httpsgithubcomhackersground-krall100/assets/105070397/df12aa4d-948a-4bc9-9e6c-0bd3626b622b)
 
+  - 이때, 꼭 위에서 생성한 리소스 그룹을 선택해주세요.
    - 이름 : asplan-hg(생성한 숫자조합)
    - 운영체제 : 리눅스    
    - 지역 : Korea Central    
@@ -68,7 +69,7 @@
    - 운영체제 : 리눅스    
    - 지역 : Korea Central    
    - 가격 플랜 : B1    
-   - 리눅스 플랜 : 기본 default로 해주세요    
+   - 리눅스 플랜 : 위에서 생성한 App Service plan
 
 
 ### 4. Secrete Key 설정하기
